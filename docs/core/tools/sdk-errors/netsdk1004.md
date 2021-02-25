@@ -21,3 +21,4 @@ Here are some possible causes of the error:
 * A project was restored separately by an older version of Nuget.exe. To resolve the error, open a command prompt and run `dotnet restore` on the project.
 * An earlier error, such as NETSDK1045 (the version of the SDK you're using doesn't support the project's target framework), prevented NuGet from creating the project assets file. To resolve the NETSDK1004 error, resolve the earlier error, and then run `dotnet restore` on the project.
 * App Center CI is building a project that has an external assembly that is not in NuGet. To resolve the error, use a NuGet package for the assembly.
+* Go to Tools -> Options -> NuGet Package Manager -> General and Click the Button "Click All Nuget Cache"
